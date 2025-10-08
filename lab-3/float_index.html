@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float Block Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      max-width: 90vw;
+      margin: 2vh auto;
+      padding: 1rem;
+      overflow: hidden;
+    }
+
+    .block {
+      color: #000;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      margin: 0;
+    }
+
+    .top-text {
+      background-color: #6c9fcf;
+      width: 100%;
+    }
+
+    .top-img {
+      background-color: #f2b9e5;
+      width: 100%;
+    }
+
+    .left-img {
+      background-color: #b3e099;
+      float: left;
+      width: 70%;
+      min-height: 30vh;
+    }
+
+    .right-text {
+      background-color: #688a56;
+      float: right;
+      width: 30%;
+      min-height: 30vh;
+    }
+
+    .bottom-section {
+      width: 100%;
+      overflow: hidden;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="block top-text">Text</div>
+    <div class="block top-img">Img.</div>
+    <div class="bottom-section">
+      <div class="block left-img">Img.</div>
+      <div class="block right-text">Text</div>
+    </div>
+  </div>
+</body>
+</html>
