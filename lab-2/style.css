@@ -1,0 +1,116 @@
+.phones-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    padding-left: 20px;
+}
+
+.phone-body {
+    width: 150px;
+    height: 300px;
+    background-color: #d8e4c2;
+    border-radius: 25px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.screen {
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    /* For centering the time text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    color: black;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+}
+
+.key {
+    background-color: #3b3a54;
+    border-radius: 50%; 
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.container-position {
+    position: relative;
+    width: 150px;
+    height: 300px;
+}
+
+.container-position .phone-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-position .screen {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 120px;
+    height: 110px;
+}
+
+.container-position .keypad {
+    position: absolute;
+    top: 150px;
+    left: 15px;
+    width: 120px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.container-transform {
+    display: grid;
+    align-items: start;
+    justify-items: start;
+    width: 150px;
+    height: 300px;
+}
+
+.container-transform > div {
+    grid-area: 1 / 1;
+}
+
+.transform-body {
+    width: 100%;
+    height: 100%;
+}
+
+.transform-screen {
+    width: 120px;
+    height: 110px;
+    transform: translate(15px, 20px);
+}
+
+.transform-time {
+    width: 120px;
+    height: 110px; 
+    transform: translate(15px, 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key-1 { transform: translate(15px, 150px); }
+.key-2 { transform: translate(60px, 150px); }
+.key-3 { transform: translate(105px, 150px); }
+
+.key-4 { transform: translate(15px, 195px); }
+.key-5 { transform: translate(60px, 195px); }
+.key-6 { transform: translate(105px, 195px); }
+
+.key-7 { transform: translate(15px, 240px); }
+.key-8 { transform: translate(60px, 240px); }
+.key-9 { transform: translate(105px, 240px); }
