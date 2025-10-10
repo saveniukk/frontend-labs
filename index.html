@@ -1,28 +1,95 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Савенюк М. Ф., ІМ-33, Лабораторні роботи">
-    <title>Лабораторні роботи Савенюк М. Ф., ІМ-33, варіант 66</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Савенюк М. Ф., ІМ-33, Лабораторні роботи">
+  <title>Лабораторні роботи Савенюк М. Ф., ІМ-33, номер у списку студентів: 66</title>
+
+  <style>
+    body {
+      font-family: "Inter", "Segoe UI", sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      color: #444;
+    }
+
+    ol {
+      list-style: decimal;
+      padding-left: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    ul {
+      list-style: disc;
+      margin-top: 0.5rem;
+      margin-left: 1.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0066cc;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #003366;
+    }
+
+    li {
+      margin: 0.4rem 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at top left, #ffffff, #f5f5f5);
+      z-index: -1;
+    }
+
+  </style>
 </head>
 <body>
-    <h2>Лабораторні роботи</h2>
-    <h3>
-    Виконала Савенюк Мирослава Федорівна,  ІМ-33, варіант 66
-    </h3>
-    <p>Виберіть лабораторну роботу:</p>
-    <ol>
-        <li><a href="lab-1/index.html">Лабораторна робота №1</a></li>
-        <!--
-        <li><a href="lab-2/index.html">Лабораторна робота №2</a></li>
-        <li><a href="lab-3/index.html">Лабораторна робота №3</a></li>
-        <li><a href="lab-4/index.html">Лабораторна робота №4</a></li>
-        <li><a href="lab-5/index.html">Лабораторна робота №5</a></li>
-        <li><a href="lab-6/index.html">Лабораторна робота №6</a></li>
-        <li><a href="lab-7/index.html">Лабораторна робота №7</a></li>
-        <li><a href="lab-8/index.html">Лабораторна робота №8</a></li>
-        -->
-    </ol>
+  <h2>Лабораторні роботи</h2>
+  <h3>Виконала Савенюк Мирослава Федорівна, ІМ-33, варіант 66</h3>
+
+  <p>Виберіть лабораторну роботу:</p>
+
+  <ol>
+    <li><a href="lab-1/index.html">Лабораторна робота №1</a></li>
+    <li><a href="lab-2/index.html">Лабораторна робота №2</a></li>
+    <li>
+      Лабораторна робота №3
+      <ul>
+        <li><a href="lab-3/float_index.html">Float page layout</a></li>
+        <li><a href="lab-3/flex_index.html">Flexbox page layout</a></li>
+      </ul>
+    </li>
+  </ol>
 </body>
 </html>
