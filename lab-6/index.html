@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, лабораторна робота, Савенюк М. Ф">
+    <meta name="description" content="Лабораторна робота номер 6, виконала Савенюк М. Ф., ІМ-33">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Савенюк М. Ф., ІМ-33, ЛР №6, варіант 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <button id="fetchButton" class="fetch-button">Отримати дані користувача</button>
+            
+            <div id="loadingMessage" class="loading-message" style="display: none;">
+                Завантаження даних...
+            </div>
+            
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+            
+            <div id="userInfo" class="user-info" style="display: none;">
+                <div class="user-picture">
+                    <img id="userPicture" src="" alt="Фото користувача">
+                </div>
+                <div class="user-details">
+                    <div class="info-item">
+                        <span class="info-label">Ім'я:</span>
+                        <span id="userName" class="info-value"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Місто:</span>
+                        <span id="userCity" class="info-value"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Країна:</span>
+                        <span id="userCountry" class="info-value"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Поштовий індекс:</span>
+                        <span id="userPostcode" class="info-value"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
