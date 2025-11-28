@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, лабораторна робота, Савенюк М. Ф">
+    <meta name="description" content="Лабораторна робота номер 5, виконала Савенюк М. Ф., ІМ-33">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Савенюк М. Ф., ІМ-33, ЛР №5, варіант 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="userForm">
+            <div class="form-group">
+                <label for="fullName">ПІБ у форматі ТТТТТТ Т.Т.:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Наприклад: Іванов І.П.">
+                <span class="error-message" id="fullNameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="birthDate">Дата народження у форматі ЧЧ.ЧЧ.ЧЧЧЧ:</label>
+                <input type="text" id="birthDate" name="birthDate" placeholder="Наприклад: 18.04.2006">
+                <span class="error-message" id="birthDateError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Адреса у форматі м. ТТТТТТ:</label>
+                <input type="text" id="address" name="address" placeholder="Наприклад: м. Київ">
+                <span class="error-message" id="addressError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email у форматі тттттт@ттттт.com:</label>
+                <input type="text" id="email" name="email" placeholder="Наприклад: example@gmail.com">
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="telegram">Telegram у форматі @Т_ТТТТТ:</label>
+                <input type="text" id="telegram" name="telegram" placeholder="Наприклад: @user_name">
+                <span class="error-message" id="telegramError"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Відправити</button>
+                <button type="reset">Очистити</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h3>Завдання 2: Таблиця з подіями</h3>
+        
+        <div class="table-section">
+            <div class="color-palette">
+                <label>Виберіть колір для кліку:</label>
+                <input type="color" id="colorPicker" value="#ff6b6b">
+            </div>
+            
+            <table id="numberTable">
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
